@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Copyright', :file => 'LICENSE' }
   s.frameworks = 'QuartzCore', 'SparkInspector'
   s.libraries    = 'z' 
-  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/SparkInspectorSDK"' }
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/SparkInspectorSDK"', 'OTHER_LDFLAGS' => '-ObjC' }
 end
